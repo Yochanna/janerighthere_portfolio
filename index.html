@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jane's Portfolio</h1>
+            <p>Full Stack Developer | Django & HTMX Specialist</p>
+        </header>
+
+        <section class="projects">
+            <div class="project-card">
+                <h3>Programming Introduction</h3>
+                <p>Guessing Game</p>
+                <a href="https://programming-introduction.onrender.com/" target="_blank" class="btn">View Live</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Programming Introduction</h3>
+                <p>Shopping Cart</p>
+                <a href="https://programming-introduction-1.onrender.com/" target="_blank" class="btn">View Live</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Python CRUD Articles</h3>
+                <p>A full-featured CRUD application for managing articles. Built with Django.</p>
+                <a href="https://python-crud-p2vu.onrender.com/articles/" target="_blank" class="btn">View Live</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Python Django CMS</h3>
+                <p>Advanced template usage, custom filters, and dynamic content rendering techniques.</p>
+                <a href="https://python-django-mrpr.onrender.com/" target="_blank" class="btn">View Live</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Django Dynamic Forms with HTMX</h3>
+                <p>Interactive dynamic forms. Features realtime form updates without page reloads.</p>
+                <a href="https://dynamicform-htmx.onrender.com/" target="_blank" class="btn">View Live</a>
+            </div>
+          
+        </section>
+
+        <footer>
+            <p>© 2025 Jane's Portfolio. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
