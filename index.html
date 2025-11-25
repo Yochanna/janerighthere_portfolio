@@ -42,6 +42,14 @@
             opacity: 0.9;
         }
 
+        .section-title {
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            margin: 40px 0 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -110,6 +118,10 @@
                 font-size: 1rem;
             }
 
+            .section-title {
+                font-size: 1.5rem;
+            }
+
             .projects {
                 grid-template-columns: 1fr;
             }
@@ -120,34 +132,58 @@
     <div class="container">
         <header>
             <h1>Jane's Portfolio</h1>
-            <p>Full Stack Developer | Django & HTMX Specialist</p>
+            <p>Full Stack Developer | JavaScript, Django, HTMX & Node.js Specialist</p>
         </header>
 
+        <h2 class="section-title">JavaScript Projects</h2>
         <section class="projects">
             <div class="project-card">
-                <h3>Programming Introduction</h3>
-                <p>Guessing Game</p>
+                <h3>Programming Introduction - Guessing Game</h3>
+                <p>An interactive number guessing game built with JavaScript, demonstrating fundamental programming concepts like loops, conditionals, and user input handling.</p>
                 <a href="https://programming-introduction.onrender.com/" target="_blank" class="btn">View Live</a>
             </div>
 
             <div class="project-card">
-                <h3>Programming Introduction</h3>
-                <p>Shopping Cart</p>
+                <h3>Programming Introduction - Shopping Cart</h3>
+                <p>A dynamic shopping cart application built with JavaScript, featuring item management, price calculations, and interactive DOM manipulation.</p>
                 <a href="https://programming-introduction-1.onrender.com/" target="_blank" class="btn">View Live</a>
             </div>
+        </section>
 
+        <h2 class="section-title">Python & Django Project</h2>
+        <section class="projects">
             <div class="project-card">
                 <h3>Python CRUD Articles</h3>
-                <p>A full-featured CRUD application for managing articles. Built with Django.</p>
+                <p>A full featured CRUD application for managing articles. Built with Django, featuring create, read, update, and delete operations.</p>
                 <a href="https://python-crud-p2vu.onrender.com/articles/" target="_blank" class="btn">View Live</a>
             </div>
 
             <div class="project-card">
                 <h3>Django Dynamic Forms with HTMX</h3>
-                <p>Interactive dynamic forms. Features realtime form updates (of tasks in this case) without page reloads.</p>
+                <p>Interactive dynamic forms with real time task updates without page reloads. Powered by Django and HTMX for seamless user experience.</p>
                 <a href="https://dailyvibes-tasks-htmx.onrender.com/" target="_blank" class="btn">View Live</a>
             </div>
-          
+        </section>
+
+        <h2 class="section-title">Node.js Projects</h2>
+        <section class="projects">
+            <div class="project-card">
+                <h3>Confetti Cuisine</h3>
+                <p>A recipe and cooking class management application built with Node.js, featuring user authentication and course listings.</p>
+                <a href="#" target="_blank" class="btn">View Live</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Confetti Cuisine Enhanced</h3>
+                <p>Enhanced version of Confetti Cuisine built with Express.js, featuring improved routing, middleware, and database integration.</p>
+                <a href="#" target="_blank" class="btn">View Live</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Confetti Cuisine Subscriptions</h3>
+                <p>Full featured subscription management system for Confetti Cuisine, allowing users to subscribe to cooking classes and manage their memberships.</p>
+                <a href="#" target="_blank" class="btn">View Live</a>
+            </div>
         </section>
 
         <footer>
